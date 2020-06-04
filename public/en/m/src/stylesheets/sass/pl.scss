@@ -1,0 +1,271 @@
+
+@import "./_common/base";
+@import "./layout";
+
+/*
+  pl css
+*/
+
+
+.conTxtBox{
+  strong{
+    color:#111315;
+  }
+  h3{
+    color:#111315;
+  }
+  p{
+    color:#626364;
+  }
+}
+// visual
+.visual{
+  width: 100%;
+  position: relative;
+  background-color: #000;
+  text-align: center;
+  color: #fff;
+  padding: em(180) 0 em(84);
+  strong{
+    font-size: em(32);
+    font-weight: $bold;
+  }
+  h2{
+    font-size: em(64);
+    font-weight: $bold;
+    line-height: 1.1;
+    margin:em(20) 0 em(160);
+  }
+}
+.technology{
+  width: 100%;
+  padding: em(20) 0 em(98);
+  background-color: #000;
+  .conTxtBox{
+    margin: em(70) 0 0;
+  }
+  h3{
+    color: #fff;
+  }
+  p{
+    color: #ddd;
+    font-weight: $medium;
+  }
+  a{
+    display: inline-block;
+    margin: em(38) 0 0;
+    font-size:em(24);
+    font-weight: $medium;
+    padding:em(36) em(60) em(30);
+    border:2px solid #fff;
+    letter-spacing: em(-1);
+    color: #fff;
+    @include borderRadius(60px);
+  }
+}
+.suondBoost{
+  width: 100%;
+  padding: em(168) 0 em(86);
+  background-color: #000;
+  .conTxtBox{
+    margin: em(50) 0 0;
+  }
+  h3{
+    color: #fff;
+  }
+  p{
+    color: #ddd;
+    font-weight: $medium;
+  }
+}
+.multiColor{
+  width: 100%;
+  padding: em(90) 0 0;
+  background-color: #000;
+  .conTxtBox{
+    padding: em(50) 0 em(90);
+    text-align: center;
+  }
+  h3{
+    color: #fff;
+  }
+  p{
+    color: #ddd;
+    font-weight: $medium;
+  }
+  .videoBox{
+    width: 100%;
+    position: relative;
+    top:0;
+    left: 0;
+    .layer1{
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 2;
+      .imgBox{
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+      }
+    }
+    .layer2{
+      width: 100%;
+      position: relative;
+      top: 0;
+      left: 0;
+      .imgBox{
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+      }
+    }
+  }
+  .bass{
+    text-align: center;
+    background-color: #fff;
+    padding: em(40) 0 0;
+    h3{
+      color: #242526;
+    }
+    p{
+      color: #242526;
+    }
+  }
+}
+.experts{
+  width: 100%;
+  padding: em(90) em(20) 0;
+  @include boxSizing;
+  .conTxtBox{
+    padding: em(50) 0 em(90);
+    text-align: center;
+  }
+  h3{
+    color: $black;
+    font-size: em(64);
+  }
+
+}
+.balanced{
+  width: 100%;
+  padding: em(90) em(20) 0;
+  @include boxSizing;
+  .conTxtBox{
+    padding: 0 0 em(90);
+  }
+  h3{
+    color: $black;
+    font-size: em(60);
+    margin: 0 0 em(46);
+  }
+}
+.stylish{
+  width: 100%;
+  padding: 0 em(20) em(90);
+  @include boxSizing;
+  .conTxtBox{
+    padding: em(50) em(20);
+    @include boxSizing;
+  }
+  h3{
+    color: $black;
+    font-size: $title-font-size;
+  }
+  p{
+    font-weight:$medium;
+    margin: em(44) 0 0;
+  }
+}
+.compatible{
+  width: 100%;
+  .conTxtBox{
+    text-align: center;
+    padding: em(50) em(20);
+    @include boxSizing;
+  }
+  h3{
+    color: $black;
+    font-size: em(64);
+    line-height: 1.1;
+  }
+  p{
+    font-weight:$medium;
+    color: $black;
+    margin: em(44) 0 0;
+  }
+  .imgBox{
+    width: 100%;
+    position: relative;
+    p{
+      width: 100%;
+      position: absolute;
+      bottom: em(68);
+      left: 0;
+      color: #747576;
+      text-align: center;
+    }
+  }
+}
+.allDay{
+  width: 100%;
+  padding: em(20) 0 em(40);
+  @include boxSizing;
+  .imgBox{
+    position: relative;
+    p{
+      text-align: center;
+      font-weight:$medium;
+      color: #747576;
+      font-size: em(28);
+    }
+  }
+  .conTxtBox{
+    width: 100%;
+    position: absolute;
+    top: em(100);
+    left: 0;
+    text-align: center;
+    z-index: 1;
+    p{
+      font-weight:$medium;
+      color: #fff;
+      font-size: $base-font-size;
+      margin: em(44) 0 0;
+    }
+  }
+  h3{
+    color: #fff;
+    font-size: em(64);
+  }
+
+
+}
+.choices{
+  position: relative;
+  .imgBox{
+    width: 100%;
+    position: relative;
+    h3{
+      width: 100%;
+      position: absolute;
+      bottom: em(100);
+      left: 0;
+      font-size: em(76);
+      padding: 0 em(20) 0;
+      letter-spacing: em(-4);
+      @include boxSizing;
+    }
+  }
+  .imgBox.layer1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+}

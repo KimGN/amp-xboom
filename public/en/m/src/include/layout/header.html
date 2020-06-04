@@ -1,0 +1,148 @@
+<header>
+    <div id="navDefault">
+        <button type="button" class="menu">
+            <span>menu</span>
+        </button>
+        <h1 ><a href="../main/main.html"></a></h1>
+        <button type="button" class="wtb">
+            <span>buy</span>
+        </button>
+    </div>
+    <div id="navActive">
+        <button type="button" class="menu" on="tap:openGnb.toggle">
+            <span>menu</span>
+        </button>
+        <h1 title="LG OLED logo"><a href="../main/main.html"></a></h1>
+        <button type="button" class="wtb" on="tap:openWtb.toggle">
+            <span>buy</span>
+        </button>
+    </div>
+</header>
+<div class="mosionBox">
+    <amp-position-observer on="enter:hideAnim.start; exit:showAnim.start" layout="nodisplay"></amp-position-observer>
+    <amp-animation id="showAnim" layout="nodisplay">
+        <script type="application/json">
+            {
+                "duration": "200ms",
+                "fill": "both",
+                "iterations": "1",
+                "direction": "alternate",
+                "animations": [
+                    {
+                        "selector": "#navActive",
+                        "keyframes": [
+                            { "opacity": "1" }
+                        ]
+                    }
+                ]
+            }
+        </script>
+    </amp-animation>
+    <amp-animation id="hideAnim" layout="nodisplay">
+        <script type="application/json">
+            {
+                "duration": "200ms",
+                "fill": "both",
+                "iterations": "1",
+                "direction": "alternate",
+                "animations": [
+                    {
+                        "selector": "#navActive",
+                        "keyframes": [
+                            { "opacity": "0" }
+                        ]
+                    }
+                ]
+            }
+        </script>
+    </amp-animation>
+</div>
+
+<!--GNB-->
+<amp-sidebar id="openGnb" class="slide_box" layout="nodisplay">
+    <div class="gnbBox" >
+        <div class="menuList">
+            <ul>
+                <li>
+                    <a href="../sub/plseries.html" title="">PL Series <span>Simply Style</span></a>
+                </li>
+<!--                <li>-->
+<!--                    <a href="../sub/pnseries.html" title=" ">PN Series<span>Go for Fun</span></a>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <a href="../sub/jellybean.html" title=" ">Jellybean Series<span>Get a Taste</span></a>-->
+<!--                </li>-->
+                <li>
+                    <a href="../sub/meridian.html" title="">with MERIDIAN Technology</a>
+                </li>
+            </ul>
+            <div class="gnbCta">
+                <a href="#" target="_blank" title="">SHOP NOW</a>
+            </div>
+        </div>
+        <button type="button" class="closeBtn" on="tap:openGnb.toggle" role="button" tabindex="0"> close </button>
+    </div>
+</amp-sidebar>
+
+<!--WTB-->
+<amp-sidebar id="openWtb" class="slide_box" layout="nodisplay" side="right">
+    <div class="gnbBox" >
+        <div class="shopList">
+            <div>
+                <strong>PL Series <span>Simply Style</span></strong>
+                <ul>
+                    <li>
+                        <a href="#">PL7</a>
+                    </li>
+                    <li>
+                        <a href="#">PL5</a>
+                    </li>
+                    <li>
+                        <a href="#">PL2</a>
+                    </li>
+                    <li>
+                        <a href="#">PL7W</a>
+                    </li>
+                    <li>
+                        <a href="#">PL5W</a>
+                    </li>
+                    <li>
+                        <a href="#">PL2W</a>
+                    </li>
+                </ul>
+            </div>
+<!--            <div>-->
+<!--                <strong>PN Series <span>Go for Fun</span></strong>-->
+<!--                <ul>-->
+<!--                    <li>-->
+<!--                        <a href="#">PL7</a>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                        <a href="#">PL5</a>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                        <a href="#">PL7G</a>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                        <a href="#">PL5G</a>-->
+<!--                    </li>-->
+<!--                </ul>-->
+<!--            </div>-->
+<!--            <div>-->
+<!--                <strong>Jellybean Series <span>Get a Taste</span></strong>-->
+<!--                <ul>-->
+<!--                    <li>-->
+<!--                        <a href="#">Ice Mint</a>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                        <a href="#">Bubble Gum</a>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                        <a href="#">Sour Lemon</a>-->
+<!--                    </li>-->
+<!--                </ul>-->
+<!--            </div>-->
+        </div>
+        <button type="button" class="closeBtn" on="tap:openWtb.toggle" role="button" tabindex="0"> close </button>
+    </div>
+</amp-sidebar>

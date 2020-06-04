@@ -1,0 +1,90 @@
+
+@import "./_common/base";
+@import "./layout";
+
+/*
+  main css
+*/
+#wrap{
+  background-color: #000;
+  .box_1{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    .txtBox{
+      width: 100%;
+      position: absolute;
+      top:50%;
+      -webkit-transform: translate( 0 , -50%);
+      -moz-transform: translate( 0 , -50%);
+      -ms-transform: translate( 0 , -50%);
+      transform: translate( 0 , -50%);
+    }
+    h2{
+      text-align: center;
+      width: 100%;
+      font-size: em(75);
+      color: #c5d0d8;
+      line-height: 1.2;
+      letter-spacing: em(5);
+      margin: 0 0 em(60);
+    }
+  }
+  .box_2{
+    .txtBox{
+      width: 100%;
+      padding: em(300) 0 em(300);
+      text-align: center;
+      strong{
+        font-size: em(80);
+        color: #fff;
+      }
+    }
+  }
+  .box_3{
+    .txtBox{
+      width: 100%;
+      padding: em(650) 0 em(650);
+      text-align: center;
+      background: url(../../images/main/main_img_02.jpg) 50% 55% no-repeat;
+      background-size: em(683) em(271);
+      strong{
+        font-size: em(70);
+        color: #fff;
+        letter-spacing: em(2);
+      }
+    }
+  }
+  .box_4{
+    padding: em(400) 0 em(100);
+    .txtBox{
+      width: 100%;
+      height: em(740);
+      text-align: center;
+      background: url(../../images/main/main_img_03.jpg) 50% 50% no-repeat;
+      background-size: em(768) em(737);
+      strong{
+        font-size: em(70);
+        color: #fff;
+      }
+      .btnBox{
+        margin: em(550) 0 0;
+      }
+      a{
+        display: inline-block;
+        width: em(300);
+        height: em(90);
+        line-height: em(90);
+        border: 2px solid #fff;
+        font-weight: $bold;
+        font-size: em(24);
+        color: #fff;
+        letter-spacing: em(1);
+        @include borderRadius(em(45));
+      }
+    }
+  }
+}
+.ctaBox{
+  border-top:1px solid rgba(255,255,255,0.3);
+}

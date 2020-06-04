@@ -1,0 +1,644 @@
+<!doctype html>
+<html amp lang="en">
+<head>
+    <meta charset="utf-8">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    @@include("../../include/layout/meta.html", {
+    "title" : "",
+    "mata-title" : "",
+    "description" : "",
+    "keywords" : ""
+    })
+    <link rel="canonical" href="https://amp.dev/ko/documentation/guides-and-tutorials/start/create/basic_markup/">
+    <link rel="icon" type="image/png" href="../../images/common/favicon.ico" />
+    <style amp-boilerplate>body {-webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;-moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;-ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;animation: -amp-start 8s steps(1, end) 0s 1 normal both}  @-webkit-keyframes -amp-start { from {visibility: hidden} to {visibility: visible} }  @-moz-keyframes -amp-start { from {visibility: hidden} to {visibility: visible} }  @-ms-keyframes -amp-start { from {visibility: hidden} to {visibility: visible} }  @-o-keyframes -amp-start { from {visibility: hidden} to {visibility: visible} }  @keyframes -amp-start { from {visibility: hidden} to {visibility: visible} }</style>
+    <noscript>
+        <style amp-boilerplate>body {-webkit-animation: none;-moz-animation: none;-ms-animation: none;animation: none}</style>
+    </noscript>
+    <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
+    <!--  amp-video  -->
+    <script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script>
+    <!--  amp-fx-flying-carpet  -->
+    <script async custom-element="amp-fx-flying-carpet" src="https://cdn.ampproject.org/v0/amp-fx-flying-carpet-0.1.js"></script>
+    @@include("../../include/layout/amp-Components.html")
+    <style amp-custom>
+        @@include("../../include/css/pl.css")
+    </style>
+</head>
+<body>
+@@include("../../include/layout/header.html")
+<div id="wrap">
+    <article class="visual">
+        <strong>PL SERIES</strong>
+        <h2>A New Look<br>for Balanced Sound</h2>
+        <amp-img width="768" height="349" layout="responsive" src="../../images/pl/pl_img01.jpg" alt="" ></amp-img>
+    </article>
+    <article class="technology">
+        <div class="animeBlock">
+            <amp-position-observer on="scroll:fadeTransition_img_01.seekTo(percent=event.percent)" intersection-ratios="0" layout="nodisplay"></amp-position-observer>
+            <div class="imgBox" id="motion_img_01">
+                <amp-img width="768" height="608" layout="responsive" src="../../images/pl/pl_img02.jpg" alt="" ></amp-img>
+            </div>
+            <amp-animation id="fadeTransition_img_01" layout="nodisplay">
+                <script type="application/json">
+                    {
+                        "duration": "1",
+                        "fill": "both",
+                        "direction": "reverse",
+                        "animations": [{
+                            "selector": "#motion_img_01",
+                            "keyframes":
+                            [
+                                { "opacity": "0", "offset": 0 },
+                                { "opacity": "0", "offset": 0.2 },
+                                { "opacity": "0.6", "offset": 0.4 },
+                                { "opacity": "1", "offset": 0.5 },
+                                { "opacity": "0.6", "offset": 0.6 },
+                                { "opacity": "0", "offset": 0.8 },
+                                { "opacity": "0", "offset": 1 }
+                            ]
+                        }]
+                    }
+                </script>
+            </amp-animation>
+        </div>
+        <div class="animeBlock">
+            <amp-position-observer on="scroll:fadeTransition_txt_01.seekTo(percent=event.percent)" intersection-ratios="0" layout="nodisplay"></amp-position-observer>
+            <div class="conTxtBox" id="motion_txt_01">
+                <h3>Meridian<br>Technology</h3>
+                <div class="txtBox">
+                    <p>
+                        The collaboration with Meridian<br>
+                        continues. Enjoy premium quality<br>
+                        sound, deep bass, and rich tones<br>
+                        every time you press play.
+                    </p>
+                </div>
+                <a href="../sub/meridian.html#with_meridian">DISCOVER MORE</a>
+            </div>
+            <amp-animation id="fadeTransition_txt_01" layout="nodisplay">
+                <script type="application/json">
+                    {
+                        "duration": "1",
+                        "fill": "both",
+                        "direction": "reverse",
+                        "animations": [{
+                            "selector": "#motion_txt_01",
+                            "keyframes":
+                            [
+                                { "opacity": "0", "offset": 0 },
+                                { "opacity": "0", "offset": 0.2 },
+                                { "opacity": "0.6", "offset": 0.4 },
+                                { "opacity": "1", "offset": 0.5 },
+                                { "opacity": "0.6", "offset": 0.6 },
+                                { "opacity": "0", "offset": 0.8 },
+                                { "opacity": "0", "offset": 1 }
+                            ]
+                        }]
+                    }
+                </script>
+            </amp-animation>
+        </div>
+    </article>
+    <article class="suondBoost">
+        <div class="animeBlock">
+            <amp-position-observer on="scroll:fadeTransition_img_02.seekTo(percent=event.percent)" intersection-ratios="0" layout="nodisplay"></amp-position-observer>
+            <div class="imgBox" id="motion_img_02">
+                <amp-img width="768" height="562" layout="responsive" src="../../images/pl/pl_img03.gif" alt="" ></amp-img>
+            </div>
+            <amp-animation id="fadeTransition_img_02" layout="nodisplay">
+                <script type="application/json">
+                    {
+                        "duration": "1",
+                        "fill": "both",
+                        "direction": "reverse",
+                        "animations": [{
+                            "selector": "#motion_img_02",
+                            "keyframes":
+                            [
+                                { "opacity": "0", "offset": 0 },
+                                { "opacity": "0", "offset": 0.2 },
+                                { "opacity": "0.6", "offset": 0.4 },
+                                { "opacity": "1", "offset": 0.5 },
+                                { "opacity": "0.6", "offset": 0.6 },
+                                { "opacity": "0", "offset": 0.8 },
+                                { "opacity": "0", "offset": 1 }
+                            ]
+                        }]
+                    }
+                </script>
+            </amp-animation>
+        </div>
+        <div class="animeBlock">
+            <amp-position-observer on="scroll:fadeTransition_txt_02.seekTo(percent=event.percent)" intersection-ratios="0" layout="nodisplay"></amp-position-observer>
+            <div class="conTxtBox" id="motion_txt_02">
+                <h3>SOUND BOOST</h3>
+                <div class="txtBox">
+                    <p>
+                        Press SOUND BOOST to increase<br>
+                        the sound power, widen the sound field,<br>
+                        and inject some life into your music.
+                    </p>
+                </div>
+            </div>
+            <amp-animation id="fadeTransition_txt_02" layout="nodisplay">
+                <script type="application/json">
+                    {
+                        "duration": "1",
+                        "fill": "both",
+                        "direction": "reverse",
+                        "animations": [{
+                            "selector": "#motion_txt_02",
+                            "keyframes":
+                            [
+                                { "opacity": "0", "offset": 0 },
+                                { "opacity": "0", "offset": 0.2 },
+                                { "opacity": "0.6", "offset": 0.4 },
+                                { "opacity": "1", "offset": 0.5 },
+                                { "opacity": "0.6", "offset": 0.6 },
+                                { "opacity": "0", "offset": 0.8 },
+                                { "opacity": "0", "offset": 1 }
+                            ]
+                        }]
+                    }
+                </script>
+            </amp-animation>
+        </div>
+    </article>
+    <article class="multiColor">
+        <div class="animeBlock">
+            <amp-position-observer on="scroll:fadeTransition_txt_03.seekTo(percent=event.percent)" intersection-ratios="0" layout="nodisplay"></amp-position-observer>
+            <div class="conTxtBox" id="motion_txt_03">
+                <h3>Multi-Color<br>Lighting</h3>
+                <div class="txtBox">
+                    <p>
+                        Press SOUND BOOST to increase<br>
+                        the sound power, widen the sound<br>
+                        field, and inject some life into<br>
+                        your music.
+                    </p>
+                </div>
+            </div>
+            <amp-animation id="fadeTransition_txt_03" layout="nodisplay">
+                <script type="application/json">
+                    {
+                        "duration": "1",
+                        "fill": "both",
+                        "direction": "reverse",
+                        "animations": [{
+                            "selector": "#motion_txt_03",
+                            "keyframes":
+                            [
+                                { "opacity": "0", "offset": 0 },
+                                { "opacity": "0", "offset": 0.2 },
+                                { "opacity": "0.6", "offset": 0.4 },
+                                { "opacity": "1", "offset": 0.5 },
+                                { "opacity": "0.6", "offset": 0.6 },
+                                { "opacity": "0", "offset": 0.8 },
+                                { "opacity": "0", "offset": 1 }
+                            ]
+                        }]
+                    }
+                </script>
+            </amp-animation>
+        </div>
+        <div class="animeBlock videoBox">
+            <amp-position-observer on="scroll:fadeTransition_img_03.seekTo(percent=event.percent)" intersection-ratios="0" layout="nodisplay"></amp-position-observer>
+            <div class="layer1" id="motion_img_03">
+                <div class="imgBox">
+                    <amp-img width="768" height="58" layout="responsive" src="../../images/pl/video_black_bg.png" alt="" ></amp-img>
+                </div>
+                <amp-img width="606" height="442" layout="responsive" src="../../images/pl/video_black_mobile.gif" alt="" ></amp-img>
+            </div>
+            <div class="layer2">
+                <div class="imgBox">
+                    <amp-img width="768" height="58" layout="responsive" src="../../images/pl/video_white_bg.png" alt="" ></amp-img>
+                </div>
+                <amp-img width="606" height="442" layout="responsive" src="../../images/pl/video_white_mobile.gif" alt="" ></amp-img>
+            </div>
+            <amp-animation id="fadeTransition_img_03" layout="nodisplay">
+                <script type="application/json">
+                    {
+                        "duration": "1",
+                        "fill": "both",
+                        "direction": "reverse",
+                        "animations": [{
+                            "selector": "#motion_img_03",
+                            "keyframes":
+                            [
+                                { "opacity": "0", "offset": 0 },
+                                { "opacity": "0", "offset": 0.2 },
+                                { "opacity": "0", "offset": 0.4 },
+                                { "opacity": "0.6", "offset": 0.5 },
+                                { "opacity": "0.8", "offset": 0.6 },
+                                { "opacity": "1", "offset": 0.8 },
+                                { "opacity": "1", "offset": 1 }
+                            ]
+                        }]
+                    }
+                </script>
+            </amp-animation>
+        </div>
+        <div class="bass">
+            <div class="conTxtBox">
+                <h3>Dual Action Bass</h3>
+                <div class="txtBox">
+                    <p>
+                        See the bass in action as the woofers<br>
+                        vibrate with party-starting beats. 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </article>
+    <article class="experts">
+        <div class="conTxtBox">
+            <h3>LG XBOOM Go<br>Sound Impresses<br>the Experts</h3>
+        </div>
+        <div class="carouselBox">
+            <amp-carousel width="728" height="980" layout="responsive" type="slides">
+                <div class="card">
+                    <amp-img width="600" height="360" layout="responsive" src="../../images/pl/experts_img01.jpg" alt=""></amp-img>
+                    <div class="disclaimer">
+                        <span>*Influencers are provided free LG products for their reviews.</span>
+                    </div>
+                    <p>
+                        “I feel like it might make the sound better<br>
+                        in comparison to others that we’ve seen<br>
+                        just because of the way they focused their<br>
+                        passive radiators. It’s a little bit different<br>
+                        from what we’ve seen and from listening<br>
+                        to them right in here they do sound pretty<br>
+                        awesome.”
+                    </p>
+                    <strong>DLX Willington</strong>
+                    <span>Tech YouTuber</span>
+                </div>
+            </amp-carousel>
+        </div>
+    </article>
+    <article class="balanced">
+        <amp-position-observer on="scroll:fadeTransition_img_04.seekTo(percent=event.percent)" intersection-ratios="0" layout="nodisplay"></amp-position-observer>
+        <amp-img width="768" height="471" layout="responsive" src="../../images/pl/pl_img04.jpg" alt="" id="motion_img_04"></amp-img>
+        <amp-animation id="fadeTransition_img_04" layout="nodisplay">
+            <script type="application/json">
+                {
+                    "duration": "1",
+                    "fill": "both",
+                    "direction": "reverse",
+                    "animations": [{
+                        "selector": "#motion_img_04",
+                        "keyframes":
+                        [
+                            { "opacity": "1", "offset": 0 },
+                            { "opacity": "1", "offset": 0.2 },
+                            { "opacity": "1", "offset": 0.4 },
+                            { "opacity": "1", "offset": 0.5 },
+                            { "opacity": "0.6", "offset": 0.6 },
+                            { "opacity": "0", "offset": 0.8 },
+                            { "opacity": "0", "offset": 1 }
+                        ]
+                    }]
+                }
+            </script>
+        </amp-animation>
+        <amp-position-observer on="scroll:fadeTransition_txt_04.seekTo(percent=event.percent)" intersection-ratios="0" layout="nodisplay"></amp-position-observer>
+        <div class="conTxtBox" id="motion_txt_04">
+            <h3>A New Look<br>for Balanced Sound</h3>
+            <amp-img width="688" height="36" layout="responsive" src="../../images/pl/logo_txt_1.jpg" alt="" ></amp-img>
+        </div>
+        <amp-animation id="fadeTransition_txt_04" layout="nodisplay">
+            <script type="application/json">
+                {
+                    "duration": "1",
+                    "fill": "both",
+                    "direction": "reverse",
+                    "animations": [{
+                        "selector": "#motion_txt_04",
+                        "keyframes":
+                        [
+                            { "opacity": "1", "offset": 0 },
+                            { "opacity": "1", "offset": 0.2 },
+                            { "opacity": "1", "offset": 0.4 },
+                            { "opacity": "1", "offset": 0.5 },
+                            { "opacity": "0.2", "offset": 0.6 },
+                            { "opacity": "0", "offset": 0.8 },
+                            { "opacity": "0", "offset": 1 }
+                        ]
+                    }]
+                }
+            </script>
+        </amp-animation>
+    </article>
+    <article class="stylish">
+        <div class="conTxtBox">
+            <h3>Simply Stylish</h3>
+        </div>
+        <amp-fx-flying-carpet height="260px">
+            <amp-img src="../../images/pl/flying_img.jpg" layout="responsive" width="728" height="1290" alt=""></amp-img>
+        </amp-fx-flying-carpet>
+        <p>
+            A sleek rounded design with a<br>
+            rubberized surface makes the<br>
+            LG Bluetooth speaker easy to hold<br>
+            in your hand. The side woofers light<br>
+            up to the beat of your track.
+        </p>
+    </article>
+    <article class="compatible">
+        <div class="animeBlock">
+            <amp-position-observer on="scroll:fadeTransition_txt_05.seekTo(percent=event.percent)" intersection-ratios="0" layout="nodisplay"></amp-position-observer>
+            <div class="conTxtBox" id="motion_txt_05">
+                <h3>Bluetooth Surround<br>with Compatible<br>LG TVs</h3>
+                <p>
+                    Easily connect two LG XBOOM Go PL7<br>
+                    models to your LG TV to enjoy<br>
+                    an immersive surround sound while<br>
+                    watching your favourite content.
+                </p>
+            </div>
+            <amp-animation id="fadeTransition_txt_05" layout="nodisplay">
+                <script type="application/json">
+                    {
+                        "duration": "1",
+                        "fill": "both",
+                        "direction": "reverse",
+                        "animations": [{
+                            "selector": "#motion_txt_05",
+                            "keyframes":
+                            [
+                                { "opacity": "1", "offset": 0 },
+                                { "opacity": "1", "offset": 0.2 },
+                                { "opacity": "1", "offset": 0.4 },
+                                { "opacity": "1", "offset": 0.5 },
+                                { "opacity": "0.6", "offset": 0.6 },
+                                { "opacity": "0", "offset": 0.8 },
+                                { "opacity": "0", "offset": 1 }
+                            ]
+                        }]
+                    }
+                </script>
+            </amp-animation>
+        </div>
+        <div class="animeBlock">
+            <amp-position-observer on="scroll:fadeTransition_img_04.seekTo(percent=event.percent)" intersection-ratios="0" layout="nodisplay"></amp-position-observer>
+            <div class="imgBox" id="motion_img_04">
+                <amp-img width="768" height="727" layout="responsive" src="../../images/pl/pl_img05.jpg" alt="" ></amp-img>
+                <p>
+                    * Speakers have to be the same model.<br>
+                    ** Only available from 2020<br>
+                    on OLED, NanoCell, and UHD models
+                </p>
+            </div>
+            <amp-animation id="fadeTransition_img_04" layout="nodisplay">
+                <script type="application/json">
+                    {
+                        "duration": "1",
+                        "fill": "both",
+                        "direction": "reverse",
+                        "animations": [{
+                            "selector": "#motion_img_04",
+                            "keyframes":
+                            [
+                                { "opacity": "1", "offset": 0 },
+                                { "opacity": "1", "offset": 0.2 },
+                                { "opacity": "1", "offset": 0.4 },
+                                { "opacity": "1", "offset": 0.5 },
+                                { "opacity": "0.6", "offset": 0.6 },
+                                { "opacity": "0", "offset": 0.8 },
+                                { "opacity": "0", "offset": 1 }
+                            ]
+                        }]
+                    }
+                </script>
+            </amp-animation>
+        </div>
+    </article>
+    <article class="allDay">
+        <div class="imgBox">
+            <div class="conTxtBox">
+                <h3>All-day Battery Life</h3>
+                <p>
+                    24-hour battery life lets you enjoy<br>
+                    quality sound for longer,<br>
+                    wherever you go,<br>
+                    without needing to charge.
+                </p>
+            </div>
+            <amp-img width="768" height="1020" layout="responsive" src="../../images/pl/pl_img06.jpg" alt="" ></amp-img>
+            <p>
+                * 24-hour battery life is based on<br>
+                using 50% volume and no lighting.<br>
+                ** Other conditional factors may affect battery life.
+            </p>
+        </div>
+    </article>
+    <article class="choices">
+        <div class="animeBlock">
+            <amp-position-observer on="scroll:fadeTransition_img_05.seekTo(percent=event.percent)" intersection-ratios="0" layout="nodisplay"></amp-position-observer>
+            <div class="imgBox layer1" id="motion_img_05">
+                <amp-img width="768" height="730" layout="responsive" src="../../images/pl/pl_img07.jpg" alt="" ></amp-img>
+            </div>
+            <amp-animation id="fadeTransition_img_05" layout="nodisplay">
+                <script type="application/json">
+                    {
+                        "duration": "1",
+                        "fill": "both",
+                        "direction": "reverse",
+                        "animations": [{
+                            "selector": "#motion_img_05",
+                            "keyframes":
+                            [
+                                { "opacity": "0", "offset": 0 },
+                                { "opacity": "0.4", "offset": 0.2 },
+                                { "opacity": "0.6", "offset": 0.4 },
+                                { "opacity": "0.8", "offset": 0.5 },
+                                { "opacity": "1", "offset": 0.6 },
+                                { "opacity": "1", "offset": 0.8 },
+                                { "opacity": "1", "offset": 1 }
+                            ]
+                        }]
+                    }
+                </script>
+            </amp-animation>
+        </div>
+        <div class="imgBox">
+            <amp-img width="768" height="730" layout="responsive" src="../../images/pl/pl_img08.jpg" alt="" ></amp-img>
+            <h3>Two Colors<br>Two Great Choices</h3>
+        </div>
+    </article>
+    <article class="spec">
+        <div class="conTxtBox">
+            <h3>Choose Your<br>LG XBOOM Go</h3>
+        </div>
+        <div class="specArrow">
+            <div class="arrowCta"></div>
+        </div>
+        <div class="scroll-X">
+            <div class="tableSpec">
+                <ul class="listSpec">
+                    <li>
+                        <div>Meridian<br>Technology</div>
+                    </li>
+                    <li>
+                        <div>Sound Modes</div>
+                    </li>
+                    <li>
+                        <div>Amplifier</div>
+                    </li>
+                    <li>
+                        <div>Voice Command</div>
+                    </li>
+                    <li>
+                        <div>Sound Output</div>
+                    </li>
+                    <li>
+                        <div>Battery Life</div>
+                    </li>
+                    <li>
+                        <div>Waterproof</div>
+                    </li>
+                    <li>
+                        <div>Size<br>(WxHxD)mm</div>
+                    </li>
+                </ul>
+                <ul class="item_img">
+                    <li>
+                        <amp-img width="554" height="125" layout="responsive" src="../../images/pl/pl7.png" alt="" ></amp-img>
+                    </li>
+                    <li>
+                        <amp-img width="554" height="125" layout="responsive" src="../../images/pl/pl5.png" alt="" ></amp-img>
+                    </li>
+                    <li>
+                        <amp-img width="554" height="125" layout="responsive" src="../../images/pl/pl2.png" alt="" ></amp-img>
+                    </li>
+                </ul>
+                <ul class="buyBtn">
+                    <li>
+                        <a href="#">
+                            <strong>SHOP NOW</strong>
+                            PL7 Black
+                        </a>
+                        <a href="#">
+                            <strong>SHOP NOW</strong>
+                            PL7 White
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <strong>SHOP NOW</strong>
+                            PL5 Black
+                        </a>
+                        <a href="#">
+                            <strong>SHOP NOW</strong>
+                            PL5 White
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <strong>SHOP NOW</strong>
+                            PL2 Black
+                        </a>
+                        <a href="#">
+                            <strong>SHOP NOW</strong>
+                            PL2 White
+                        </a>
+                    </li>
+                </ul>
+                <div class="info_list">
+                    <dl>
+                        <dt>PL7</dt>
+                        <dd>
+                            <div>O</div>
+                        </dd>
+                        <dd>
+                            <div>Sound Boost</div>
+                        </dd>
+                        <dd>
+                            <div>Dual Action Bass</div>
+                        </dd>
+                        <dd>
+                            <div>O</div>
+                        </dd>
+                        <dd>
+                            <div>30W</div>
+                        </dd>
+                        <dd>
+                            <div>24 hrs</div>
+                        </dd>
+                        <dd>
+                            <div>IPX5</div>
+                        </dd>
+                        <dd>
+                            <div>245 x 98 x 98</div>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>PL5</dt>
+                        <dd>
+                            <div>O</div>
+                        </dd>
+                        <dd>
+                            <div>Sound Boost</div>
+                        </dd>
+                        <dd>
+                            <div>Dual Action Bass</div>
+                        </dd>
+                        <dd>
+                            <div>O</div>
+                        </dd>
+                        <dd>
+                            <div>30W</div>
+                        </dd>
+                        <dd>
+                            <div>24 hrs</div>
+                        </dd>
+                        <dd>
+                            <div>IPX5</div>
+                        </dd>
+                        <dd>
+                            <div>245 x 98 x 98</div>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>PL2</dt>
+                        <dd>
+                            <div>O</div>
+                        </dd>
+                        <dd>
+                            <div>Sound Boost</div>
+                        </dd>
+                        <dd>
+                            <div>Dual Action Bass</div>
+                        </dd>
+                        <dd>
+                            <div>O</div>
+                        </dd>
+                        <dd>
+                            <div>30W</div>
+                        </dd>
+                        <dd>
+                            <div>24 hrs</div>
+                        </dd>
+                        <dd>
+                            <div>IPX5</div>
+                        </dd>
+                        <dd>
+                            <div>245 x 98 x 98</div>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </article>
+</div>
+@@include("../../include/layout/footer.html")
+<div class="ctaBox">
+    <ul>
+        <li><a href="../main/main.html">Home</a></li>
+        <li><a href="../sub/meridian.html" title="">Meridian</a></li>
+        <li><a href="#" target="_blank">Show Now</a></li>
+    </ul>
+</div>
+</body>
+</html>
